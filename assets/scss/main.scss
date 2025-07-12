@@ -1,0 +1,40 @@
+@use "./variables" as *;
+
+html {
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $black;
+  color: $white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  color: $light-gray;
+  font-size: 14px;
+  font-weight: regular;
+  letter-spacing: 0.2;
+  line-height: 21px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  background-color: none;
+}
+
+a {
+  color: $white;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
