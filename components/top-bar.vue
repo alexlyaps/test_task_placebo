@@ -8,11 +8,11 @@
     />
     <h1 class="hidden">Loft Hall</h1>
     <div class="topbar">
-      <div class="topbar__left">
+      <div class="topbar__left animate__animated animate__fadeInLeft">
         <img :src="logo" alt="Loft Hall Logo" />
         <NavMenu />
       </div>
-      <div class="topbar__right">
+      <div class="topbar__right animate__animated animate__fadeInRight">
         <span>+7 495 120-19-05</span>
         <BaseButton>Перезвоните мне</BaseButton>
       </div>
@@ -69,10 +69,7 @@
     top: 460px;
     left: calc((100vw - 300px) / 2);
     width: 300px;
-
-    &:hover {
-      animation: bounce 2s;
-    }
+    animation: fadeInDown 2s;
   }
 }
 </style>

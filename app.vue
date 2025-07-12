@@ -1,6 +1,6 @@
 <template>
   <TopBar />
-  <Halls />
+  <Halls class="animate__animated animate__fadeIn" />
   <Cta />
   <FooterComp />
 </template>

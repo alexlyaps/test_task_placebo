@@ -1,17 +1,23 @@
 <template>
-  <div class="cta">
-    <h3 class="cta__heading">Новогодний корпоратив</h3>
-    <p class="cta__text">
-      Стильные залы с декором и крафтовой мебелью. Качественный звук, авторская
-      кухня, нет «пробки»
-    </p>
-    <BaseButton class="cta__button" variant="text">Подробнее →</BaseButton>
+  <div class="cta-wrapper">
+    <div class="cta">
+      <h3 class="cta__heading">Новогодний корпоратив</h3>
+      <p class="cta__text">
+        Стильные залы с декором и крафтовой мебелью. Качественный звук,
+        авторская кухня, нет «пробки»
+      </p>
+      <BaseButton class="cta__button" variant="text">Подробнее →</BaseButton>
+    </div>
     <div class="cta__decoration"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "~/assets/scss/variables" as *;
+
+.cta-wrapper {
+  position: relative;
+}
 
 .cta {
   position: relative;
@@ -43,17 +49,6 @@
     bottom: 32px;
     right: 32px;
   }
-
-  .cta__decoration {
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    width: 1180px;
-    height: 117px;
-    border-radius: 20px;
-    background-color: #0c0f3a;
-    z-index: -1;
-  }
 }
 
 .cta::before {
@@ -83,5 +78,16 @@
   100% {
     left: 115%;
   }
+}
+
+.cta__decoration {
+  position: absolute;
+  top: 8px;
+  left: calc(50% - 1180px / 2);
+  width: 1180px;
+  height: 117px;
+  border-radius: 20px;
+  background-color: #0c0f3a;
+  z-index: -1;
 }
 </style>

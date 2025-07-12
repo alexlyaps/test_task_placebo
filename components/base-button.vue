@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  variant?: "big" | "rounded" | "small" | "text";
+  variant?: "big" | "rounded" | "small" | "tiny" | "text";
 }>();
 
 const variantClass = `btn--${props.variant || "small"}`;
@@ -48,11 +48,29 @@ const variantClass = `btn--${props.variant || "small"}`;
 }
 
 .btn--small {
+  padding: 0 0.5rem;
   color: #fff;
   background-color: #000;
   border: 1px solid #333333;
   border-radius: 9px;
   height: 28px;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.btn--tiny {
+  padding: 0 0.5rem;
+  color: #fff;
+  font-size: 12px;
+  background-color: #000;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  height: 26px;
+  margin-right: 10px;
 
   &:hover {
     background-color: #fff;
