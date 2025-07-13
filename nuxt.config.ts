@@ -21,7 +21,15 @@ export default defineNuxtConfig({
       title: "LOFT HALL",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Описание по умолчанию" },
+        { name: "description", content: "Loft Hall by Placebo" },
+        {
+          property: "og:description",
+          content: "Loft Hall by Placebo",
+        },
+        {
+          property: "og:image",
+          content: "/images/Rockfellers.jpg",
+        },
       ],
       link: [{ rel: "icon", type: "image/png", href: "/my-favicon.ico" }],
     },
