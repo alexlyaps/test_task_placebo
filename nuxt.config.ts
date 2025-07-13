@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   modules: ["@nuxt/fonts", "@nuxt/image", "@nuxt/icon"],
   nitro: {
     preset: "static",
+    prerender: {
+      failOnError: false,
+    },
   },
   icon: {
     customCollections: [{ prefix: "my-icon", dir: "./assets/icons" }],
@@ -22,5 +25,6 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: "icon", type: "image/png", href: "/my-favicon.ico" }],
     },
+    baseURL: "test-task-placebo",
   },
 });
