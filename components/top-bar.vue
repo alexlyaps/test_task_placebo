@@ -82,6 +82,8 @@
 
   .heading {
     position: absolute;
+    color: #c7c7c7;
+    font-weight: 400;
     top: 460px;
     left: calc((100vw - 300px) / 2);
     width: 300px;

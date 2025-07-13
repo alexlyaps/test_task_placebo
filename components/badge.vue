@@ -9,6 +9,8 @@
 .badge {
   height: 24px;
   color: #d9d9d9;
+  font-size: 14px;
+  font-weight: 500;
   background-color: rgb(255, 255, 255, 0.16);
   border-radius: 6px;
   padding: 2px 12px;

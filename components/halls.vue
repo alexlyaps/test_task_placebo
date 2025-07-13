@@ -1,6 +1,6 @@
 <template>
   <main class="halls">
-    <h2>Залы в Москве</h2>
+    <h2 class="heading">Залы в Москве</h2>
     <div class="halls__buttons">
       <div class="row">
         <BaseButton variant="rounded">До 100 персон</BaseButton>
@@ -16,10 +16,10 @@
       </div>
     </div>
     <div class="halls__container">
-      <Card name="Rockfeller" />
+      <Card name="Rockfellers" />
       <Card name="Grace" />
       <Card name="Montblanc" />
-      <Card name="Rockfeller" />
+      <Card name="Rockfellers" />
       <Card name="Grace" />
       <Card name="Montblanc" />
     </div>
@@ -27,6 +27,11 @@
 </template>
 
 <style lang="scss" scoped>
+.heading {
+  font-weight: 500;
+  font-size: 22px;
+}
+
 .halls {
   margin: 0 auto;
   margin-top: 40px;

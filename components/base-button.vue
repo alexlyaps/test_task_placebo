@@ -17,7 +17,7 @@ const variantClass = `btn--${props.variant || "small"}`;
 .btn {
   padding: 0 1.5rem;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.2s ease-in-out;
   height: 36px;
   border: none;
@@ -29,10 +29,12 @@ const variantClass = `btn--${props.variant || "small"}`;
   background-color: #ffffff;
   color: #000000;
   height: 36px;
+  border: 1px solid #000;
 
   &:hover {
     background-color: #000;
     color: #fff;
+    border: 1px solid #fff;
   }
 }
 
@@ -41,6 +43,7 @@ const variantClass = `btn--${props.variant || "small"}`;
   background-color: #000;
   border: 1px solid #333333;
   border-radius: 18px;
+  font-size: 14px;
 
   &:hover {
     background-color: #fff;
@@ -85,10 +88,11 @@ const variantClass = `btn--${props.variant || "small"}`;
   background-color: transparent;
   height: 28px;
   font-size: 14px;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     font-weight: 600;
+    transform: translateX(10px);
   }
 }
 </style>

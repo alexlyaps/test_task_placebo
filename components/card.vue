@@ -7,6 +7,7 @@
         width="390"
         height="390"
         :alt="`Image of ${name} Hall`"
+        loading="lazy"
       />
       <h2 class="card__name">{{ name }} Hall</h2>
       <div class="card__badges">
@@ -67,6 +68,8 @@ const props = defineProps<{
 
   .card__name {
     margin-top: 28px;
+    font-size: 22px;
+    font-weight: 500;
   }
 
   .card__badges {

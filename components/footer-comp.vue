@@ -179,12 +179,20 @@
 
         .address__city {
           font-size: 22px;
+          font-weight: 600;
         }
 
         .address__street {
           color: #7f7f7f;
           font-size: 14px;
           margin-bottom: 18px;
+          font-weight: 400;
+        }
+
+        .address__phone,
+        address__email {
+          font-size: 14px;
+          font-weight: 400;
         }
       }
 
