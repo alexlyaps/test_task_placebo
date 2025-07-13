@@ -1,20 +1,28 @@
 <template>
   <div class="page-wrapper">
     <img
-      class="gradient"
+      v-if="loaded"
+      class="gradient animate__animated animate__fadeIn"
       src="/images/gradient.png"
       width="1920"
       height="650"
     />
+    <div v-else class="skeleton"></div>
     <h1 class="hidden">Loft Hall</h1>
     <div class="topbar">
-      <div class="topbar__left animate__animated animate__fadeInLeft">
-        <img :src="logo" alt="Loft Hall Logo" />
-        <NavMenu />
+      <div class="topbar__left">
+        <img
+          :src="logo"
+          alt="Loft Hall Logo"
+          width="61"
+          height="61"
+          class="animate__animated animate__fadeIn"
+        />
+        <NavMenu class="animate__animated animate__fadeInLeft" />
       </div>
       <div class="topbar__right animate__animated animate__fadeInRight">
         <span>+7 495 120-19-05</span>
-        <BaseButton>Перезвоните мне</BaseButton>
+        <BaseButton variant="big">Перезвоните мне</BaseButton>
       </div>
     </div>
     <h3 class="heading">
@@ -27,6 +35,14 @@
 <style lang="scss" scoped>
 @use "~/assets/scss/variables" as *;
 @use "animate.css/animate";
+
+.skeleton {
+  width: 1920px;
+  position: absolute;
+  height: 650px;
+  background-color: #000;
+  z-index: -1;
+}
 
 .page-wrapper {
   position: relative;
@@ -76,4 +92,14 @@
 
 <script setup>
 import logo from "~/assets/images/logo.svg";
+
+const loaded = ref(false);
+
+onMounted(() => {
+  const img = new Image();
+  img.src = logo;
+  img.onload = () => {
+    loaded.value = true;
+  };
+});
 </script>

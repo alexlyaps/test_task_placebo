@@ -33,12 +33,18 @@
               <BaseButton variant="small">WhatsApp</BaseButton>
             </div>
             <div class="icons">
-              <div class="icon-decorator"><Icon name="my-icon:vk" /></div>
-              <div class="icon-decorator"><Icon name="my-icon:zen" /></div>
               <div class="icon-decorator">
-                <Icon name="my-icon:instagram" />
+                <Icon name="my-icon:vk" size="8px" />
               </div>
-              <div class="icon-decorator"><Icon name="my-icon:face" /></div>
+              <div class="icon-decorator">
+                <Icon name="my-icon:zen" size="14px" />
+              </div>
+              <div class="icon-decorator">
+                <Icon name="my-icon:instagram" size="13px" />
+              </div>
+              <div class="icon-decorator">
+                <Icon name="my-icon:face" size="14px" />
+              </div>
             </div>
           </div>
         </section>
@@ -85,7 +91,7 @@
       </div>
       <div class="buttons">
         <div class="logo-container">
-          <Icon name="my-icon:placebo-logo" />
+          <Icon name="my-icon:placebo-logo" size="24px" />
           <span class="logo-title">Part of Placebo/25</span>
         </div>
         <BaseButton variant="tiny">Мобильная версия</BaseButton>
@@ -118,12 +124,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 53px;
+    gap: 33px;
   }
 
   .icons {
     display: flex;
     flex-direction: row;
+    gap: 6px;
   }
 
   .footer__top {
@@ -138,9 +145,15 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: rgba(red, green, blue, 0.09);
+      background-color: rgba(255, 255, 255, 0.09);
       display: flex;
       place-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
     }
 
     &::after {
@@ -158,7 +171,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 755px;
-      column-gap: 35px;
+      column-gap: 55px;
 
       .address {
         display: flex;

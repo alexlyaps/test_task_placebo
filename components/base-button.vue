@@ -31,7 +31,8 @@ const variantClass = `btn--${props.variant || "small"}`;
   height: 36px;
 
   &:hover {
-    background-color: #333;
+    background-color: #000;
+    color: #fff;
   }
 }
 
