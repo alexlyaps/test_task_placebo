@@ -12,4 +12,9 @@
 <script>
 import "modern-normalize";
 import "animate.css";
+import { useHead } from "#app";
+
+useHead({
+  meta: [{ name: "description", content: "Loft Hall by Placebo" }],
+});
 </script>
