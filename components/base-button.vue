@@ -59,6 +59,7 @@ const variantClass = `btn--${props.variant || "small"}`;
   border-radius: 9px;
   height: 28px;
   margin-right: 10px;
+  font-weight: 300;
 
   &:hover {
     background-color: #fff;

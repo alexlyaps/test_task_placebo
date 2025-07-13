@@ -25,6 +25,6 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: "icon", type: "image/png", href: "/my-favicon.ico" }],
     },
-    baseURL: "test-task-placebo",
+    baseURL: "/",
   },
 });

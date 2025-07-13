@@ -1,13 +1,12 @@
 <template>
   <div class="page-wrapper">
     <img
-      v-if="loaded"
       class="gradient animate__animated animate__fadeIn"
-      src="/images/gradient.png"
+      :src="`/images/gradient.png`"
       width="1920"
       height="650"
     />
-    <div v-else class="skeleton"></div>
+
     <h1 class="hidden">Loft Hall</h1>
     <div class="topbar">
       <div class="topbar__left">
@@ -42,6 +41,8 @@
   height: 650px;
   background-color: #000;
   z-index: -1;
+  top: -28px;
+  left: 0px;
 }
 
 .page-wrapper {
@@ -83,7 +84,7 @@
   .heading {
     position: absolute;
     color: #c7c7c7;
-    font-weight: 400;
+    font-weight: normal;
     top: 460px;
     left: calc((100vw - 300px) / 2);
     width: 300px;
@@ -95,13 +96,13 @@
 <script setup>
 import logo from "~/assets/images/logo.svg";
 
-const loaded = ref(false);
+// const loaded = ref(false);
 
-onMounted(() => {
-  const img = new Image();
-  img.src = logo;
-  img.onload = () => {
-    loaded.value = true;
-  };
-});
+// onMounted(() => {
+//   const img = new Image();
+//   img.src = "/images/gradient.png";
+//   img.onload = () => {
+//     loaded.value = true;
+//   };
+// });
 </script>

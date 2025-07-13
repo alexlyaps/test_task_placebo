@@ -28,7 +28,7 @@
       <section class="top-right">
         <section class="socials">
           <div class="socials__buttons">
-            <div>
+            <div class="tg-wa-buttons">
               <BaseButton variant="small">Telegram</BaseButton>
               <BaseButton variant="small">WhatsApp</BaseButton>
             </div>
@@ -180,6 +180,12 @@
         .address__city {
           font-size: 22px;
           font-weight: 600;
+        }
+
+        .tg-wa-buttons {
+          display: flex;
+          width: 190px;
+          justify-content: space-between;
         }
 
         .address__street {

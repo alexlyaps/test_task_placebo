@@ -6,7 +6,7 @@
       class="cities"
       @click="activeCity = item"
     >
-      <NuxtLink to="/">
+      <NuxtLink to="#">
         <span :class="{ active: activeCity === item }">{{ item }}</span>
       </NuxtLink>
     </li>
