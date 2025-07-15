@@ -24,10 +24,14 @@
         <BaseButton variant="big">Перезвоните мне</BaseButton>
       </div>
     </div>
-    <h3 class="heading">
-      Первоклассный сервис, изысканная кухня, стильные интерьеры и полное
-      техническое оснащение
-    </h3>
+    <div class="heading">
+      <h2 class="heading__h2">Авторские event-пространства в москве</h2>
+      <h3>
+        Первоклассный сервис, изысканная кухня, <br />
+        стильные интерьеры и полное техническое <br />
+        оснащение
+      </h3>
+    </div>
   </div>
 </template>
 
@@ -81,13 +85,23 @@
     position: absolute;
   }
 
+  .heading__h2 {
+    font-family: "Lithium";
+    font-size: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    margin-bottom: 1rem;
+  }
+
   .heading {
     position: absolute;
     color: #c7c7c7;
     font-weight: normal;
-    top: 460px;
+    bottom: 130px;
     left: calc((100vw - 300px) / 2);
-    width: 300px;
+    width: 400px;
     animation: fadeInDown 2s;
   }
 }
